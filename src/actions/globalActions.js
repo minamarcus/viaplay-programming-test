@@ -1,14 +1,16 @@
 import axios from "axios";
 
+//should be put in a .env file but for the test purpose
+const api = "https://content.viaplay.se/pc-se/serier/samtliga";
 
 export function getProducts() {
     console.log("something happened!");
     return(dispatch) => {
-        return axios.get("https://cors-anywhere.herokuapp.com/" + "https://content.viaplay.se/pc-se/serier/samtliga", {
+        return axios.get("https://cors-anywhere.herokuapp.com/" + api, {
             headers: {
                 headers: {"Access-Control-Allow-Origin": "*"}
             },
-            responseType: 'json',
+            responseType: 'json'
         }).then((response) => {
             console.log(response);
             console.log(response.data._embedded["viaplay:blocks"][0]._embedded["viaplay:products"]);

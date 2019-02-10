@@ -10,15 +10,7 @@ img.logo {
   left: 110px;
 }
 
-div.Header-pic {
-  height: 100%;
-  min-height: 480px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.App-header {
+.app-header {
   background-color: #3d4348;
   height: 70px;
   padding: 1px;
@@ -32,26 +24,14 @@ div.Header-pic {
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
 .container {
+  display: flex;
   padding: 0 40px;
   min-height: calc(100vh - 214px);
 }
 
-@media (max-width:  728px) {
+@media (max-width:  760px) {
   .container {
     padding: 0;
   }
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }

@@ -3,8 +3,10 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { getProducts } from "../actions/globalActions";
 
-import './HomePage.css';
 import Product from './Product';
+
+import '../css/HomePage.css';
+import '../css/spinner.css';
 
 class HomePage extends Component {
 
@@ -18,7 +20,7 @@ class HomePage extends Component {
             return (
                 <div className="HomePage">
                     <div className="container">
-                        <div>Error: {error.message}</div>
+                        <div className="error-message">Error: {error.message}</div>
                     </div>
                 </div>
             );
@@ -26,7 +28,14 @@ class HomePage extends Component {
             return (
                 <div className="HomePage">
                     <div className="container">
-                        <div>Loading...</div>
+                        <div className="spinner">
+                        <div className="sk-folding-cube">
+                            <div className="sk-cube1 sk-cube" />
+                            <div className="sk-cube2 sk-cube" />
+                            <div className="sk-cube4 sk-cube" />
+                            <div className="sk-cube3 sk-cube" />
+                        </div>
+                        </div>
                     </div>
                 </div>
             );

@@ -13,6 +13,7 @@ div.product-box {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #212d33;
 }
 
 div.products {
@@ -21,6 +22,7 @@ div.products {
     display: grid;
     justify-content: center;
     justify-items: center;
+    grid-auto-rows: 190px;
 }
 
 
@@ -33,4 +35,21 @@ div.User-detail {
     margin-top: 32px;
     font-size: 15px;
     font-weight: 100;
+}
+
+.spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.error-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    color: #bf5757;
 }
