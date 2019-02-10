@@ -1,0 +1,36 @@
+div.HomePage {
+    width: 100%;
+    margin: 35px auto;
+}
+
+div.product-box {
+    margin: 5px;
+}
+
+.product-image {
+    width: 320px;
+    height: 180px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.products {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 335px));
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+div.User-detail {
+    position: absolute;
+    color: white;
+    z-index: 5;
+    text-align: center;
+    width: 220px;
+    margin-top: 32px;
+    font-size: 15px;
+    font-weight: 100;
+}
