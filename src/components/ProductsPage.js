@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { getProducts } from "../actions/globalActions";
 
-import Product from './Product';
+import Product from "./Product";
 
-import '../css/HomePage.css';
-import '../css/spinner.css';
+import "../css/ProductsPage.css";
+import "../css/spinner.css";
 
-class HomePage extends Component {
+class ProductsPage extends Component {
 
     componentDidMount() {
         this.props.getProducts();
@@ -18,7 +18,7 @@ class HomePage extends Component {
         const { error, isLoaded, products } = this.props;
         if (error) {
             return (
-                <div className="HomePage">
+                <div className="ProductsPage">
                     <div className="container">
                         <div className="error-message">Error: {error.message}</div>
                     </div>
@@ -26,22 +26,22 @@ class HomePage extends Component {
             );
         } else if (!isLoaded) {
             return (
-                <div className="HomePage">
+                <div className="ProductsPage">
                     <div className="container">
                         <div className="spinner">
-                        <div className="sk-folding-cube">
-                            <div className="sk-cube1 sk-cube" />
-                            <div className="sk-cube2 sk-cube" />
-                            <div className="sk-cube4 sk-cube" />
-                            <div className="sk-cube3 sk-cube" />
-                        </div>
+                            <div className="sk-folding-cube">
+                                <div className="sk-cube1 sk-cube"/>
+                                <div className="sk-cube2 sk-cube"/>
+                                <div className="sk-cube4 sk-cube"/>
+                                <div className="sk-cube3 sk-cube"/>
+                            </div>
                         </div>
                     </div>
                 </div>
             );
         } else {
             return (
-                <div className="HomePage">
+                <div className="ProductsPage">
                     <div className="container">
                         <div className="products">
                             {products.map((item, index) => (
@@ -73,4 +73,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(HomePage);
+)(ProductsPage);

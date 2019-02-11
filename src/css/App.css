@@ -1,37 +1,37 @@
 .App {
-  width: 100%;
-  background-color: #f9f9fb;
+    width: 100%;
+    background-color: #f9f9fb;
 }
 
 img.logo {
-  width: 180px;
-  position: absolute;
-  top: 5px;
-  left: 110px;
+    width: 180px;
+    position: absolute;
+    top: 5px;
+    left: 110px;
 }
 
 .app-header {
-  background-color: #3d4348;
-  height: 70px;
-  padding: 1px;
-  color: white;
+    background-color: #3d4348;
+    height: 70px;
+    padding: 1px;
+    color: white;
 }
 
 .app-footer {
-  background-color: #3d4348;
-  height: 70px;
-  padding: 1px;
-  color: white;
+    background-color: #3d4348;
+    height: 70px;
+    padding: 1px;
+    color: white;
 }
 
 .container {
-  display: flex;
-  padding: 0 40px;
-  min-height: calc(100vh - 214px);
+    display: flex;
+    padding: 0 40px;
+    min-height: calc(100vh - 214px);
 }
 
-@media (max-width:  760px) {
-  .container {
-    padding: 0;
-  }
+@media (max-width: 760px) {
+    .container {
+        padding: 0;
+    }
 }

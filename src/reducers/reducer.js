@@ -16,12 +16,12 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 error: action.error,
-                isLoaded: true,
+                isLoaded: true
             };
         default :
             return {
                 ...state
-            }
+            };
     }
 };
 
